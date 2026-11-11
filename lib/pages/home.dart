@@ -6,6 +6,8 @@ import 'package:ai_based_health_monitor/pages/Ai_health_chat.dart';
 import 'package:ai_based_health_monitor/pages/general_questions.dart';
 import 'package:ai_based_health_monitor/pages/contact_page.dart';
 import 'package:ai_based_health_monitor/pages/feed_back.dart';
+import 'package:ai_based_health_monitor/pages/report_any_case.dart';
+import 'package:ai_based_health_monitor/pages/privacy_policy.dart';
 
 class Home extends StatelessWidget{
   const Home({super.key});
@@ -220,10 +222,14 @@ class Home extends StatelessWidget{
                     }, child: Text("মতামত জানান",style: TextStyle(
                         fontSize: 18
                     ),)),
-                    TextButton(onPressed: (){}, child: Text("সমস্যা রিপোর্ট করুন",style: TextStyle(
+                    TextButton(onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ReportAnyCase()));
+                    }, child: Text("সমস্যা রিপোর্ট করুন",style: TextStyle(
                         fontSize: 18
                     ),)),
-                    TextButton(onPressed: (){}, child: Text("গোপনীয়তা নীতি",style: TextStyle(
+                    TextButton(onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>PrivacyPolicy()));
+                    }, child: Text("গোপনীয়তা নীতি",style: TextStyle(
                         fontSize: 18
                     ),)),
 

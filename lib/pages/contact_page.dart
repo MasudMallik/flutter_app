@@ -124,7 +124,7 @@ class ContactPage extends StatelessWidget{
             ),
             Container(
               alignment: Alignment.center,
-              height: 700,
+              height: null,
               width: double.infinity,
               padding: EdgeInsets.all(10),
               margin: EdgeInsets.all(20),
